@@ -1,0 +1,151 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #c3cfe2;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #686de0;
+  padding: 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0;
+}
+header h3 {
+  font-size: 1.2rem;
+  color: lightsteelblue;
+  margin-top: 0.5em;
+}
+
+/* ----- TESTIMONIAL ----- */
+.testimonial {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgb(90, 89, 89);
+  width: 350px;
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial p {
+  color: rgb(90, 89, 89);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 1em 1.8em 1em;
+  margin: 1em 0 3em;
+}
+.testimonial div {
+  background-color: #686de0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  padding-top: 4.2em;
+}
+.testimonial div h1 {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+.testimonial div h2 {
+  font-size: 1.1rem;
+  color: lightsteelblue;
+  margin: 0.5em 0 2em;
+}
+.testimonial div img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid white;
+  position: absolute;
+  bottom: 6.5em;
+}
+
+/* ----- IMAGE GRID ----- */
+.image-grid {
+  max-width: 900px;
+  margin: 6em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-grid div {
+  flex: 280px 1;
+  margin: 0.5em;
+  position: relative;
+  background: black;
+  border-radius: 10px;
+}
+.image-grid div img {
+  width: 100%;
+  display: block;
+  border-radius: inherit;
+  transition: all 0.8s ease-out;
+}
+.image-grid div a {
+  background-color: white;
+  color: rgb(90, 89, 89);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.image-grid div:hover img {
+  opacity: 0;
+}
+.image-grid div:hover a {
+  opacity: 1;
+}
+
+/* ----- SOCIAL MEDIA BUTTONS ----- */
+.social {
+  width: 238px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: -183px;
+  top: 40%;
+}
+.social a {
+  padding: 0.5em 0.5em 0.5em 1em;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+.social a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1em;
+}
+.social a:hover {
+  transform: translateX(-183px);
+}
+.social .blog {
+  background-color: #e17b77;
+}
+.social .twitter {
+  background-color: #00aced;
+}
+.social .linkedin {
+  background-color: #007bb6;
+}
+.social .facebook {
+  background-color: #3b5998;
+}
+.social .github {
+  background-color: #333;
+}/*# sourceMappingURL=style.css.map */
